@@ -1,6 +1,15 @@
-<h1>All Songs</h1>
+<div class='header'>
+<h1>Songs</h1>
+</div>
 
-<% @songs.each do |song| %>
-  <h2><%= song.title %></h2>
-  <p>Plays: <%= song.play_count %></p>
-<% end %>
+<div class='grid'>
+  <% @songs.each do |song| %>
+    <div class='songs'>
+      <%= image_tag('images.jpg') do %>
+      <% end %>
+      <p><%= song.title %></p>
+      <p><%= song.length %> seconds</p>
+      <p>Play Count <%= song.play_count %></p><br/>
+    </div>
+  <% end %>
+</div>

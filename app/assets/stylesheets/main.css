@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100px auto;
+  align-items: center;
+  justify-items: center;
+  background-color: #D0F2DF;
+}
+
+.header {
+  font-family: papyrus;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+img {
+  height: 100px;
+  width: 150px;
+  border-radius: 50%
+}
+.songs {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  background-color: #DCE7ED;
+  font-family: futura;
+}
