@@ -7,7 +7,7 @@ describe 'user can create a new song' do
     song_length = 267
     song_play_count = 340000
 
-    visit new_song_path
+    visit new_artist_song_path(artist)
 
     select artist.name, from: :song_artist_id
     fill_in :song_title, with: song_title

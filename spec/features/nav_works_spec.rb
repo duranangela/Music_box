@@ -2,12 +2,13 @@ require 'rails_helper'
 
 describe 'nav system' do
   it 'tests link to new song' do
-    visit songs_path
+    artist = Artist.create(name: 'Wild Cherry')
+
+    visit artist_path(artist)
 
     click_link "Add new song"
 
-    expect(current_path).to eq(new_song_path)
-
+    expect(current_path).to eq(new_artist_song_path(artist))
   end
 
   it 'tests link to new artist' do
