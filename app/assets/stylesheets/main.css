@@ -1,8 +1,12 @@
 body {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 100px auto;
-  background-color: #D0F2DF;
+  /* height: 100%; */
+  /* display: grid;
+  grid-template-rows: 100px auto; */
+  /* background-color: #D0F2DF; */
+  background-image: url('cassette.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: verdana;
 }
 
 .header {
@@ -17,7 +21,7 @@ body {
   grid-gap: 20px;
 }
 
-img {
+.songs img {
   height: 100px;
   width: 150px;
   border-radius: 50%;
@@ -32,4 +36,23 @@ img {
   margin: 20px;
   background-color: #DCE7ED;
   font-family: futura;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-between;
+}
+
+.form input {
+  height: 20px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.form input[type=submit] {
+  background-color: blue;
+  color: white;
 }

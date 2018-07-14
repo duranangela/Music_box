@@ -1,15 +1,35 @@
-<%= form_for [@artist, @song] do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+<div class='form-page'>
+  <div class='header'>
+    <h1>Create a new song by <%= @artist.name %></h1>
+  </div>
 
-  <%= f.label :length %>
-  <%= f.text_field :length %>
-
-  <%= f.label :play_count %>
-  <%= f.text_field :play_count %>
-
-  <%= f.label :artist_name %>
-  <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
-
-  <%= f.submit %>
-<% end %>
+  <div class=form>
+    <%= form_for [@artist, @song] do |f| %>
+      <div>
+        <%= f.label :title %>
+      </div>
+      <div class='field'>
+        <%= f.text_field :title %>
+      </div>
+      <div>
+        <%= f.label :length %>
+      </div>
+      <div class='field'>
+        <%= f.text_field :length %>
+      </div>
+      <div>
+        <%= f.label :play_count %>
+      </div>
+      <div class='field'>
+        <%= f.text_field :play_count %>
+      </div>
+      <!-- <div>
+        <%= f.label :artist_name %>
+        <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
+      </div> -->
+      <div class='submit'>
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>
