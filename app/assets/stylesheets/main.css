@@ -2,34 +2,33 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: 100px auto;
-  align-items: center;
-  justify-items: center;
   background-color: #D0F2DF;
 }
 
 .header {
   font-family: papyrus;
+  text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 20px;
 }
 
 img {
   height: 100px;
   width: 150px;
-  border-radius: 50%
+  border-radius: 50%;
+  margin-top: 10px;
 }
+
 .songs {
   display: grid;
-  justify-items: center;
+  place-items: center;
   text-align: center;
-  width: 200px;
-  height: 250px;
   border-radius: 20px;
-  padding: 10px;
   margin: 20px;
   background-color: #DCE7ED;
   font-family: futura;

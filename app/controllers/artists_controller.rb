@@ -19,6 +19,7 @@ class ArtistsController < ApplicationController
 
   def show
     @artist = Artist.find(params[:id])
+    session[:secret] = "This time for real, though"
     @songs = @artist.songs
   end
 

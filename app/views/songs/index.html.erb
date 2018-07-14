@@ -5,8 +5,7 @@
 <div class='grid'>
   <% @songs.each do |song| %>
     <div class='songs'>
-      <%= image_tag('images.jpg') do %>
-      <% end %>
+      <%= image_tag('images.jpg') %>
       <p><%= song.title %></p>
       <p><%= song.length %> seconds</p>
       <p>Play Count <%= song.play_count %></p><br/>
